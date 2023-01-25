@@ -11,14 +11,33 @@
 //      - se il numero è multiplo sia di 3 che di 5 allora FizzBuzz
 //      - se il numero è multiplo di 3 allora Fizz
 //      - se il numero è multiplo di 5 allora Buzz
-// else? no else
+// else? no else!
 
 
 // JS creo list item singolo
 const ul = document.querySelector(".ul");
     // console.log(ul);
-const li = document.createElement("li");
-    // li.innerHTML = "ciao";
-li.classList.add("box");
-ul.append(li);
+// Kikka, questo va giù nel for! const li = document.createElement("li");
+// li.classList.add("box");
+// ul.append(li);
 
+// JS FOR creo 100 li con classe box (stampando i numeri da 1 a 100)
+for (i = 0; i < 100; i++) {
+    const li = document.createElement("li");
+        console.log(li);
+    li.innerHTML = i + 1;
+    li.classList.add("box");
+    ul.append(li);
+
+    // JS dentro al ciclo FOR metto un IF in cui sovrascrivo i box in base al resto e poi sosituisco i numeri con le scritte
+    if (!((i + 1) % 3) && !((i + 1) % 5)) {
+        li.classList.add("box-both");
+        li.innerHTML = ("FizzBuzz");
+    } else if (!((i + 1) % 3) && ((i + 1) % 5)) {
+        li.classList.add("box-three");
+        li.innerHTML = ("Fizz");
+    } else if (((i + 1) % 3) && !((i + 1) % 5)) {
+        li.classList.add("box-five");
+        li.innerHTML = ("Buzz");
+    }
+}
