@@ -1,0 +1,28 @@
+body {
+    background-color: #083b4c;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #1389b2;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+}
+
+.box-both {
+    background-color: #f0466f;
+}
+
+.box-three {
+    background-color: #0cd6a1;
+}
+
+.box-five {
+    background-color: #ffd166;
+}
