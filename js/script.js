@@ -17,7 +17,7 @@
 // JS creo list item singolo
 const ul = document.querySelector(".ul");
     // console.log(ul);
-// Kikka, questo va giù nel for! const li = document.createElement("li");
+// Kikka, questo va giù nel FOR! const li = document.createElement("li");
 // li.classList.add("box");
 // ul.append(li);
 
@@ -41,3 +41,19 @@ for (i = 0; i < 100; i++) {
         li.innerHTML = ("Buzz");
     }
 }
+
+// volendo, invece che scrivere tante volte "i + 1" potevo dichiarare una costante con valore i+1 e poi usre quella!
+// potevo se no partire da uno (i = 1) e poi fare (i <= 100)
+
+// QUINDI, quel mega calcolo potevo farlo così:
+// let (i = 1; 1 <= 100; i++) {
+//      if ( (i % 5 == 0) && (i % 3 == 0) ) { 
+//          console.log("FizzBuzz");
+//      } else if (i % 3 == 0) {
+//          console.log("Fizz");   
+//      } else if (i % 5 == 0) {
+//          console.log("Buzz");
+//      } else {
+//          console.log(i);    
+//      }
+// }
